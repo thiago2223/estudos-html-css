@@ -55,6 +55,16 @@ section.imagen{
     background-color: rgb(44, 44, 44);
     color: white;
 }
+#imagen-1{
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#imagen-2{
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
 section.imagen > p{
     background-color: rgba(0, 0, 0, 0.262);
     display: inline-block;
