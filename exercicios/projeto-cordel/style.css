@@ -45,7 +45,7 @@ section{
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 section.normal{
     background-color: white;
@@ -57,7 +57,7 @@ section.imagen{
 }
 section.imagen > p{
     background-color: rgba(0, 0, 0, 0.262);
-    width: 500px;
+    display: inline-block;
 }
 footer{
     background-color: black;
