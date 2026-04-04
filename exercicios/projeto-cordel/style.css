@@ -47,6 +47,9 @@ section{
     font-family: var(--fonte3);
     font-size: 3.5vw;
 }
+section > p{
+    padding-bottom: 1em;
+}
 section.normal{
     background-color: white;
     color: black;
@@ -57,7 +60,8 @@ section.imagen{
 }
 #imagen-1{
     background-image: url(imagens/background001.jpg);
-    background-size: cover;
+    background-size: 143%;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 #imagen-2{
@@ -74,10 +78,4 @@ footer{
     text-align: center;
     color: white;
     padding: 10px;
-}
-.normal{
-
-}
-.imagen{
-
 }
