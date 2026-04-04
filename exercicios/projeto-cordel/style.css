@@ -60,9 +60,9 @@ section.imagen{
 }
 #imagen-1{
     background-image: url(imagens/background001.jpg);
-    background-size: 143%;
-    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
+    background-position: right center;
 }
 #imagen-2{
     background-image: url(imagens/background002.jpg);
