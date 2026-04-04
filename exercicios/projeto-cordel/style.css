@@ -57,6 +57,7 @@ section.normal{
 section.imagen{
     background-color: rgb(44, 44, 44);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.582);
 }
 #imagen-1{
     background-image: url(imagens/background001.jpg);
