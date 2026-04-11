@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(238, 226, 190);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            padding: 10px;
+            background-image: radial-gradient(rgb(46, 86, 209), rgb(10, 41, 79));
+            height: 100px;
+        }
+        main{
+            padding: 10px;
+            min-height: 100vh;
+            max-width: 1000px;
+            width: 70%;
+            margin: 0px  auto;
+            background-color: white;
+        }
+        h1{
+            margin: 10px auto;
+            color: white;
+            text-align: center;
+        }
+        table{
+            margin: 10px auto;
+            min-height: 200px;
+            max-width: 900px;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        td{
+            padding: 8px;
+            border: 1px solid black;
+        }
+        tr{
+            background-color: rgb(245, 255, 239);
+        }
+        div#tabela-de-soma{
+            padding: 20px;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            display: flex;
+            min-height: 200px;
+            max-width: 900px;
+            margin: 50px auto;
+            width: 50%;
+            background-color: rgb(165, 233, 177);
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        input{
+            margin: auto;
+        }
+        #titulo{
+            margin-left: 0px;
+            margin-right: 0px;
+            background-color: rgb(179, 204, 235);
+            color: black;
+        }
+        span#valor{
+            display: flexbox;
+        }
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    <header>
+        <h1>Minha primeira tabela</h1>
+    </header>
+    <main>
+        <h1 id="titulo">Valores</h1>
+        <table>
+            <tr id="linha1"> <!-- Primeira linha -->
+                <td id="dado1">
+                    A1
+                </td>
+                <td id="dado2">
+                    2
+                </td>
+                <td id="dado3">
+                    3
+                </td>
+            </tr>
+            <tr id="linha2">
+                <td id="dado4">
+                    4
+                </td>
+                <td id="dado5">
+                    5
+                </td>
+                <td id="dado6">
+                   6
+                </td>
+            </tr>
+            <tr id="linha3">
+                <td id="dado7">
+                    7
+                </td>
+                <td id="dado8">
+                    8
+                </td>
+                <td id="dado9">
+                    9
+                </td>
+            </tr>
+            <tr id="linha4">
+                <td id="dado10">
+                    10
+                </td>
+                <td id="dado11">
+                    11
+                </td>
+                <td id="dado12">
+                    12
+                </td>
+            </tr>
+        </table>
+        <!--<input type="number" name="n1" id="n1">
+         <input type="number" name="n2" id="n2">
+         
+         -->
+                <div id="tabela-de-soma">
+                <input type="number" name="n1" id="n1">
+                    <span>+</span>
+                <input type="number" name="n2" id="n2">   
+             <input type="button" value="SOMAR" onclick="clicarParaSomar()">
+                <span id="valor">
+                    Valor
+                </span>
+            </div>
+    </main>
+    <script>
+        function clicarParaSomar() {
+        var valor1 = document.querySelector('input#n1')
+        var valor2 = document.querySelector('input#n2')
+        var valor = document.querySelector('span#valor')        
+        var somaDadoX = Number(valor1.value)
+        var somaDadoY = Number(valor2.value)
+        var soma = somaDadoX + somaDadoY
+        valor.innerHTML = `A soma entre os dados ${somaDadoX} e ${somaDadoY} é igual a ${soma}`
+
+
+        }
+    </script>
+    <!--
+    HIERARQUIA DE TABELAS SIMPLES
+    tabble = tabela
+    tabble row = linha de tabela
+      table header = cabeçalho de tabela
+      table data = dado de tabela
+    -->
+</body>
+</html>
