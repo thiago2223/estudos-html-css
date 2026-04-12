@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body{
+            margin: 0px;
+            color: white;
+            background-color: rgb(0, 0, 0);
+            font-family: Poppins;
+        }
+        header{
+            padding: 10px;
+            height: 10vh;
+            margin-top: 0px;
+            background-image: linear-gradient(rgb(77, 78, 78), rgb(0, 0, 0));
+        }
+        main{
+            background-attachment: fixed;
+            background-image: url(https://img.freepik.com/free-photo/photo-stone-texture-pattern_58702-16052.jpg?semt=ais_hybrid&w=740&q=80);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: auto;
+            width: 80%;
+            padding: 20px;
+        }
+        table{
+            margin: auto;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            background-color: rgba(255, 255, 255, 0.665);
+            min-height: 10vh;
+            max-width: 900px;
+            width: 80%;
+            border-collapse: collapse;
+            border: 2px solid rgba(255, 255, 255, 0.16);
+        }
+        thead, tfoot{
+            background-color: rgb(0, 0, 0);
+        }
+        tr{
+            border: 1px solid rgba(100, 100, 100, 0.581);
+        }
+        th{
+            font-weight: 900;
+            color: rgb(12, 91, 160);
+            height: 4vh;
+            border: 1px solid rgba(0, 0, 0, 0.582);
+        }
+        td{
+            padding: 3px;
+            color: black;
+            text-align: center;
+            border: 1px solid rgba(0, 0, 0, 0.583);
+        }
+        h1, h2, h3{
+            text-align: center;
+        }
+        #tfoot-td{
+            color: white;
+        }
+        .numero{
+            padding: 5px;
+            font-weight: bold;
+            text-align: right;
+        }
+        div#div-tudo{
+            padding: 10px;
+            border-radius: 10px;
+            margin: auto;
+            background-color: rgb(5, 70, 69);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+        }
+        div#div-input{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+           padding: 10px;
+        }
+        input{
+            width: 100%;
+            margin: 5px;
+        }
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    <header>
+        <h1>Uso de Tabelas Grandes</h1>
+    </header>
+    <!--
+    table
+            thead
+                tr, td, th
+            tbody
+                tr, td, th
+            tfoot
+                tr, td, th
+    
+    -->
+                <main>
+                    <h1>População - Tabela</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Estado</th>
+                                <th>População</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                    <td id="SaoPaulo">São Paulo</td>
+                    <td class="numero" id="SPNumero">44.420.459</td>
+                                </tr>
+                                <tr>
+                    <td id="MinasGerais">Minas Gerais</td>
+                    <td class="numero" id="MGNumero">20.538.718</td>
+                                </tr>
+                                <tr>
+                    <td id="RiodeJaneiro">Rio de Janeiro</td>
+                    <td class="numero" id="RJNumero">16.054.524</td>
+                                </tr>
+                                <tr>
+                    <td id="Bahia">Bahia</td>
+                    <td class="numero" id="BANumero">14.136.417</td>
+                                </tr>
+                                <tr>
+                    <td id="Parana">Paraná</td>
+                    <td class="numero" id="PRNumero">11.443.208</td>
+                                </tr>
+                                <tr>
+                    <td id="RioGrandedoSul">Rio Grande do Sul</td>
+                    <td class="numero" id="RSNumero">10.880.506</td>
+                                </tr>
+                                <tr>
+                    <td id="Pernambuco">Pernambuco</td>
+                    <td class="numero" id="PENumero">9.058.155</td>
+                                </tr>
+                                <tr>
+                    <td id="Ceara">Ceará</td>
+                    <td class="numero" id="CENumero">8.791.688</td>
+                                </tr>
+                                <tr>
+                    <td id="Para">Pará</td>
+                    <td class="numero" id="PANumero">8.116.132</td>
+                                </tr>
+                                <tr>
+                    <td id="SantaCatarina">Santa Catarina</td>
+                    <td class="numero" id="SCNumero">7.609.601</td>
+                                </tr>
+                                <tr>
+                    <td id="Goias">Goiás</td>
+                    <td class="numero" id="GONumero">7.055.228</td>
+                                </tr>
+                                <tr>
+                    <td id="Maranhao">Maranhão</td>
+                    <td class="numero" id="MANumero">6.775.152</td>
+                                </tr>
+                                <tr>
+                    <td id="Paraiba">Paraíba</td>
+                    <td class="numero" id="PBNumero">3.974.495</td>
+                                </tr>
+                                <tr>
+                    <td id="Amazonas">Amazonas</td>
+                    <td class="numero" id="AMNumero">3.941.175</td>
+                                </tr>
+                                <tr>
+                    <td id="EspiritoSanto">Espírito Santo</td>
+                    <td class="numero" id="ESNumero">3.833.486</td>
+                                </tr>
+                                <tr>
+                    <td id="MatoGrosso">Mato Grosso</td>
+                    <td class="numero" id="MTNumero">3.658.813</td>
+                                </tr>
+                                <tr>
+                    <td id="RioGrandedoNorte">Rio Grande do Norte</td>
+                    <td class="numero" id="RNNumero">3.302.406</td>
+                                </tr>
+                                <tr>
+                    <td id="Piaui">Piauí</td>
+                    <td class="numero" id="PINumero">3.269.200</td>
+                                </tr>
+                                <tr>
+                    <td id="Alagoas" itemid="ALNumero">Alagoas</td>
+                    <td class="numero">3.127.511</td>
+                                </tr>
+                                <tr>
+                    <td id="DistritoFederal">Distrito Federal</td>
+                    <td class="numero" id="DFNumero">2.817.068</td>
+                                </tr>
+                        </tbody>
+                        <tfoot>
+                            <th>Total de habitantes</th>
+                            <td id="tfoot-td" class="numero">192.803.942</td>
+                        </tfoot>
+                    </table>
+                    <h2>Somar</h2>
+                                <div id="div-tudo">
+                                    <h3>Estado + Estado</h3>
+                                        <div id="div-input">
+                                            <input type="number" name="estado1" id="estado1">
+                                            <input type="number" name="estado2" id="estado2">
+                                            <input type="button" value="somar" onclick="somarClique()">
+                                        </div>
+                                </div>
+         </main>
+         <script>
+            function somarClique() {
+                var SaoPaulo = document.querySelector('td#SPNumero')                
+                var MinasGerais = document.querySelector('td#MGNumero')               
+                var RiodeJaneiro = document.querySelector('td#RJNumero')
+                var Parana = document.querySelector('BANumero')
+                var RioGrandedoSul = document.querySelector('BANumero')
+                var Pernambuco = document.querySelector('BANumero')
+                var Ceara = document.querySelector('BANumero')
+                var Para = document.querySelector('BANumero')
+                var SantaCatarina = document.querySelector('BANumero')
+                var Goias = document.querySelector('BANumero')
+                var Maranhao = document.querySelector('BANumero')
+                var Paraiba = document.querySelector('BANumero')
+                var Amazonas = document.querySelector('BANumero')
+                var EspiritoSanto = document.querySelector('BANumero')
+                var MatoGrosso = document.querySelector('BANumero')
+                var RioGrandedoNorte = document.querySelector('BANumero')
+                var Piaui = document.querySelector('BANumero')
+                var Alagoas = document.querySelector('BANumero')
+                var DistritoFederal = document.querySelector('BANumero')
+            }
+         </script>
+</body>
+</html>
