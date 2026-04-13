@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');        
+        :root{
+            --cor1: #45214A;
+            --cor1-2: #4a2122;
+            --cor2: #323050;
+            --cor2-2: #30504c;
+            --cor3: #21445B;
+            --cor3-2: #5b212d;
+            --cor4: #1A6566;
+            --cor4-2: #a4a245;
+            --cor5: #5D8A66;
+            --cor-5-2: #8a885d;
+            --fonte: Poppins;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-image: linear-gradient(to bottom, rgb(80, 59, 186),rgba(218, 119, 119, 0.814) );
+            color: white;
+            font-family: var(--fonte);
+            margin-top: 50px;
+            padding: 0px;
+        }
+        div.Cabeçalhos{
+            border-radius: 15px;
+            align-items: center;
+            padding: 25px;
+            width: 70%;
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.216);
+            margin: 0px auto 50px auto;
+            height: 50px;
+        }
+        main{
+            width: 100%;
+            margin: auto;
+        }
+        section{
+            padding: 50px;
+            margin: 0px;
+            height: 100vh;          
+        }
+        main p{
+            font-size: 1.7em;
+            line-height: 2em;
+            margin: auto;
+            text-align: justify;
+            width: 75%;
+        }
+        h1{
+            margin: 0px auto;
+            text-align: center;
+        }
+        section#Login{
+            padding: 50px;
+            background-image: linear-gradient(to bottom, var(--cor1), var(--cor1-2));
+        }
+        section#Contato{
+            background-image: linear-gradient(to bottom, var(--cor2), var(--cor2-2));
+        }
+        section#Blog{
+            background-image: linear-gradient(to bottom, var(--cor3), var(--cor3-2));
+        }
+        section#Mais-Sobre{
+            background-image: linear-gradient(to bottom, var(--cor4), var(--cor4-2));
+        }
+        section#Duvidas{
+            background-image: linear-gradient(to bottom, var(--cor5), var(--cor-5-2));
+        }
+        div.links{
+            text-align: center;
+            border-radius: 15px;
+            padding: 25px;
+            background-color: rgba(255, 255, 255, 0.381);
+        }
+        div.Links > a{
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.089);
+            text-decoration: none;
+            color: white;
+            margin: 25px;
+            padding: 15px;
+            font-weight: 700;            
+        }
+        div.Links > a:hover{
+            transition-duration: 0.5s;
+            text-decoration: underline;
+            border-radius: 15px;
+            background-color: rgba(6, 34, 248, 0.151);
+        }
+        div#inputs-login{
+            margin: auto;
+            align-items: center;
+            align-content: center;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            padding: 7px;
+            margin: 10px auto;
+            width: 50%;
+        }
+    </style>
+    <title>Modelo de Site - Exemplo</title>
+</head>
+<body>
+    <div class="Cabeçalhos">
+        <div class="Links">
+            <a href="#Home">Home</a> <a href="#Login">Login</a> <a href="#Contato">Contato</a> <a href="#Blog">Blog</a> <a href="#Mais-Sobre">Mais Sobre</a> <a href="#Duvidas">Duvidas</a>
+        </div>
+    </div>
+       
+    </header>
+    <main>
+        <section id="Home">
+            <h1>Home</h1>
+           <p>lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, quod! Aliquam est consequatur accusantium vitae maiores iste suscipit quis earum odit eligendi dolor ipsa pariatur quae voluptatem, animi magnam dolorem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente vitae porro facere at sequi deserunt mollitia voluptatum illo voluptas, autem accusamus ad, dolores eum aperiam earum accusantium, nisi odit adipisci.</p>
+        </section>
+        <section id="Login">
+                <div class="Cabeçalhos">
+        <div class="Links">
+            <a href="#Home">Home</a> <a href="#Login">Login</a> <a href="#Contato">Contato</a> <a href="#Blog">Blog</a> <a href="#Mais-Sobre">Mais Sobre</a> <a href="#Duvidas">Duvidas</a>
+        </div>
+    </div>
+         <h1>Login</h1>
+            <div id="inputs-login">
+                <h2>Email</h2>
+                <input type="email" name="email" id="email">
+                <h2>Senha</h2>
+                <input type="password" name="senha" id="senha">
+            </div>
+        </section>
+        <section id="Contato">
+    <div class="Cabeçalhos">
+        <div class="Links">
+            <a href="#Home">Home</a> <a href="#Login">Login</a> <a href="#Contato">Contato</a> <a href="#Blog">Blog</a> <a href="#Mais-Sobre">Mais Sobre</a> <a href="#Duvidas">Duvidas</a>
+        </div>
+    </div>            
+            <h1>Contato</h1>
+        </section>
+        <section id="Blog">
+    <div class="Cabeçalhos">
+        <div class="Links">
+            <a href="#Home">Home</a> <a href="#Login">Login</a> <a href="#Contato">Contato</a> <a href="#Blog">Blog</a> <a href="#Mais-Sobre">Mais Sobre</a> <a href="#Duvidas">Duvidas</a>
+        </div>
+    </div>            
+            <h1>Blog</h1>
+        </section>
+        <section id="Mais-Sobre">
+    <div class="Cabeçalhos">
+        <div class="Links">
+            <a href="#Home">Home</a> <a href="#Login">Login</a> <a href="#Contato">Contato</a> <a href="#Blog">Blog</a> <a href="#Mais-Sobre">Mais Sobre</a> <a href="#Duvidas">Duvidas</a>
+        </div>
+    </div>            
+            <h1>Mais Sobre</h1>
+        </section>
+        <section id="Duvidas">
+    <div class="Cabeçalhos">
+        <div class="Links">
+            <a href="#Home">Home</a> <a href="#Login">Login</a> <a href="#Contato">Contato</a> <a href="#Blog">Blog</a> <a href="#Mais-Sobre">Mais Sobre</a> <a href="#Duvidas">Duvidas</a>
+        </div>
+    </div>            
+            <h1>Duvidas</h1>
+        </section>
+    </main>
+</body>
+</html>
