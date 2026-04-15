@@ -27,6 +27,7 @@
             padding: 20px;
         }
         table{
+            position: relative;
             margin: auto;
             border-radius: 10px;
             color: rgb(0, 0, 0);
@@ -37,10 +38,18 @@
             border-collapse: collapse;
             border: 2px solid rgba(255, 255, 255, 0.16);
         }
+        tbody > tr:nth-child(2n){
+            background-color: rgba(128, 128, 128, 0.429);
+        }
         caption{
             font-size: 1.5em;
             margin: 5px;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky; /*Para deixar grudado*/
+            top: 0; /*para deixar fixado no topo*/
+            background-color: black; /*para levar o background junto*/
         }
         thead, tfoot{
             background-color: rgb(0, 0, 0);
