@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      table {
+        background-color: rgba(250, 233, 189, 0.808);
+        border-collapse: collapse;
+        margin: auto;
+        width: 60%;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+      .media,
+      thead {
+        text-align: left;
+        font-weight: bold;
+        background-color: #ccff55ae;
+      }
+      .media-nota {
+        background-color: rgba(255, 47, 0, 0.435);
+        text-align: right;
+      }
+    </style>
+    <title>Tabela</title>
+  </head>
+  <body>
+    <h1>Tabela de Notas</h1>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Área</th>
+          <th rowspan="2">Disciplina</th>
+          <th colspan="2">Notas</th>
+          <th rowspan="2">Média</th>
+        </tr>
+        <tr>
+          <th>Nota 1</th>
+          <th>Nota 2</th>
+        </tr>
+      </thead>
+        <tr>
+          <th rowspan="5">Exatas</th>
+        </tr>
+        <tr>
+          <td>Matemática</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <td>Fisica</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <td>Quimica</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <td>Biologia</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <th colspan="4" class="media">Média de Exatas</th>
+          <th class="media-nota">0.0</th>
+        </tr>
+        <tr>
+          <th rowspan="3">Humanas</th>
+        </tr>
+        <tr>
+          <td>História</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <td>Geografia</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+        </tr>
+        <tr>
+          <th colspan="4" class="media">Média de Humanas</th>
+          <th class="media-nota">0.0</th>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
