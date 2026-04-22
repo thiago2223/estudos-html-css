@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            background-color: rgba(251, 251, 233, 0.884);
+            border-collapse: collapse;
+            margin: auto;
+            width: 60%;
+        }
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+         caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .destaque {
+            background-color: rgba(0, 115, 255, 0.5);
+        }
+    </style>
+    <title>Agrupando Colunas com colgroup</title>
+</head>
+<body>
+    <h1>Agrupando Colunas com colgroup</h1>
+    <table>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col class="destaque">
+        </colgroup>
+        <caption>Cadastro de Clientes</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Email</th>
+            <th scope="col">Senha</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Endereço</th>
+        </tr>
+        <tr>
+            <td>Eduardo Silva</td>
+            <td>eduardS95@gmail.com</td>
+            <td>123456</td>
+            <td>(11) 99999-9999</td>
+            <td>Rua Exemplo, 123</td>
+        </tr>
+        <tr>
+            <td>João Pereira</td>
+            <td>joaoP87@gmail.com</td>
+            <td>abcdef</td>
+            <td>(21) 88888-8888</td>
+            <td>Avenida Modelo, 456</td>
+        </tr>
+        <tr>
+            <td>Maria Santos</td>
+            <td>mariaS92@gmail.com</td>
+            <td>qwerty</td>
+            <td>(31) 77777-7777</td>
+            <td>Rua Amostra, 789</td>
+        </tr>
+        <tr>
+            <td>Carlos Oliveira</td>
+            <td>carlosO89@gmail.com</td>
+            <td>password</td>
+            <td>(41) 66666-6666</td>
+            <td>Praça Exemplo, 101</td>
+        </tr>
+        <tr>
+            <td>Ana Costa</td>
+            <td>anaC94@gmail.com</td>
+            <td>123abc</td>
+            <td>(51) 55555-5555</td>
+            <td>Rua Teste, 202</td>
+        </tr>
+        <tr>
+            <td>Pedro Lima</td>
+            <td>pedroL90@gmail.com</td>
+            <td>letmein</td>
+            <td>(61) 44444-4444</td>
+            <td>Avenida Simulação, 303</td>
+        </tr>
+    </table>
+</html>
